@@ -8,5 +8,5 @@ def push_image(IMAGE_NAME, IMAGE_TAG){
 }
 
 def login(DOCKER_USERNAME, DOCKER_PASSWORD){
-    sh "docker login -u ${DOCKER_USERNAME}:${DOCKER_PASSWORD}"
+    sh "docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}"
 }
